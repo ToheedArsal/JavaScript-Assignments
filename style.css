@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;  /* Regular */
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;  /* Bold */
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  }
+  
+  body {
+    font-family: 'Courier New', monospace;
+  }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.outer {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+}
+
+.inner {
+  height: 300px;
+  width: 500px;
+  background-color: rgb(240, 237, 237);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color:  #023a53;
+}
+.input {
+    margin-top: 20px;
+    padding: 4px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 280px;
+    text-align: center;
+}
+.input option {
+    padding: 5px;
+}
+.input::-ms-expand {
+    display: none; 
+}
+.input:focus {
+    border-color: #181b1d;
+}
+.heading-text
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
