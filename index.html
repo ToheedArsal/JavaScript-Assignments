@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Data - Table</title>
+  </head>
+  <body>
+    <div class="table-container">
+      <h2 style="text-align: center; padding-top: 10px; padding-bottom: 10px">
+        Product and Details
+      </h2>
+      <table class="data-table">
+        <thead>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Product Title</th>
+          <th>Product Description</th>
+          <th>Product Vendor</th>
+          <th>In Stock</th>
+          <th>Buy Price</th>
+          <th>Sale Price</th>
+          <th>Purchase Quantity</th>
+          <th>Product Type</th>
+          <th>Shipping Rates</th>
+          <th>Refill Limit</th>
+          <th>Product Location Address</th>
+          <th>Actions</th>
+        </thead>
+
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Product</h2>
+        <form id="editForm">
+          <!-- Input fields for product properties -->
+        </form>
+        <input type="submit" value="Save" id="save-button">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
