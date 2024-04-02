@@ -1,0 +1,91 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+}
+h2 {
+  font-size: xx-large;
+  letter-spacing: 5px;
+}
+.outer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.inner-div {
+  height: 400px;
+  width: 400px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#label-email {
+  padding-right: 250px;
+}
+label {
+  margin-bottom: 7px;
+  font-size: 16px; 
+  font-weight: lighter;
+  padding-left: 4px;
+  letter-spacing: 1px;
+  padding-right: 225px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e9e1e1;
+  border-radius: 5px;
+  outline: none;
+}
+h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+p {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+a {
+  text-decoration: dashed;
+  padding-left: 4px;
+}
+input[type="submit"] {
+  width: 30%;
+  padding: 10px 20px;
+  background-color: #06080a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1c6ab9;
+}
+
+.signup-inner-div {
+  height: 520px;
+  width: 400px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#label-password2 {
+  padding-right: 165px;
+}

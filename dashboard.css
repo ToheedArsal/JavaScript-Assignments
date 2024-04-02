@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.header {
+  background-color: #fff;
+  color: black;
+  padding: 15px;
+}
+.logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1200px;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+.add-btn {
+  background-color: #45a049;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 280px;
+  margin-top: 20px;
+}
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #f0f0f0;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 10px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+}
+.edit-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+label {
+  margin-bottom: 7px;
+  font-size: 14px; /* Change font size */
+  font-weight: lighter;
+  padding-left: 4px;
+  letter-spacing: 1px;
+
+  text-align: left;
+}
+h2 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 60%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e9e1e1;
+  border-radius: 5px;
+  outline: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="submit"] {
+  width: 30%;
+  padding: 10px 20px;
+  background-color: #06080a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#prductNameLabel {
+  margin-right: 240px;
+}
+
+#productDescriptionLabel {
+  margin-right: 200px;
+}
+
+#priceLabel {
+  margin-right: 310px;
+}
