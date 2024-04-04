@@ -6,26 +6,30 @@
     <link rel="stylesheet" href="style.css" />
     <title>Data - Table</title>
   </head>
-  <body>
+  <body onload="fillTableDate()">
     <div class="table-container">
-      <h2 style="text-align: center; padding-top: 10px; padding-bottom: 10px">
+      <h2>
         Product and Details
       </h2>
+      <div class="input-container">
+        <button id="add-btn" class="addProduct" onclick="addProduct()">Add A Product</button>
+        <input type="text" id="searchInput" placeholder="Search..." class="search">
+        
+        <select name="addCoulmn" id="addCoulmn">
+          <option value="">Select</option>
+          <option value="6">shipping Charges</option>
+        </select>
+       
+      </div>
+      
       <table class="data-table">
         <thead>
           <th>Product ID</th>
           <th>Product Name</th>
-          <th>Product Title</th>
           <th>Product Description</th>
-          <th>Product Vendor</th>
-          <th>In Stock</th>
-          <th>Buy Price</th>
           <th>Sale Price</th>
           <th>Purchase Quantity</th>
-          <th>Product Type</th>
-          <th>Shipping Rates</th>
-          <th>Refill Limit</th>
-          <th>Product Location Address</th>
+          <th>Shipping Charges</th>
           <th>Actions</th>
         </thead>
 
@@ -33,14 +37,58 @@
       </table>
     </div>
 
+
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Edit Product</h2>
-        <form id="editForm">
-          <!-- Input fields for product properties -->
+        <h2>ADD A PRODUCT</h2>
+        <form id="addForm">
+          <label for="productName" id="prductNameLabel">Product Name</label>
+          <input type="text" name="productName" id="productName" />
+          <label for="productDescription" id="productDescriptionLabel">Product Description</label>
+          <input
+            type="text"
+            name="productDescription"
+            id="productDescription"
+          />
+          <label for="price" id="priceLabel">Price</label>
+          <input type="number" name="price" id="price" />
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity">
+          <label for="shippingCharges">Shipping Charges</label>
+          <input type="text" id="shippingCharges" name="shippingCharges">
+          <input
+            type="submit"
+            value="Save"
+            id="save-button"
+            onclick="saveAProduct()"
+          />
         </form>
-        <input type="submit" value="Save" id="save-button">
+      </div>
+    </div>
+
+
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close closeEditModal" id="closeEditModal">&times;</span>
+        <h2>EDIT A PRODUCT</h2>
+        <form id="editForm">
+          <label for="productName" id="prductNameLabel">Product Name</label>
+          <input type="text" name="productName" id="productName" />
+          <label for="productDescription" id="productDescriptionLabel"
+            >Product Description</label
+          >
+          <input
+            type="text"
+            name="productDescription"
+            id="productDescription"
+          />
+          <label for="price" id="priceLabel">Price</label>
+          <input type="number" name="price" id="price" />
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity">
+          <input type="submit" value="Update" id="update-button" />
+        </form>
       </div>
     </div>
     <script src="script.js"></script>
